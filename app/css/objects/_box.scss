@@ -3,24 +3,20 @@
 \*------------------------------------*/
 /**
  * Simple, boxed off content, e.g.:
- * 
+ *
    <div class="box">
        I am boxed off.
    </div>
- * 
+ *
  */
 .box {
     @extend .cf;
     display: block;
-}
-
-.box {
     padding: $base--spacing-unit;
 
     > :last-child {
         margin-bottom: 0;
     }
-
 }
 
 
@@ -49,4 +45,14 @@
  */
 .box--round {
     border-radius: 100%;
+}
+
+.box--promo {
+  background-color: $brand--color;
+  color: #fff;
+}
+
+.box--soft {
+
+  background-color: rgba(white, .8);
 }

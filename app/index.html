@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
 
-    <title></title>
+  <title></title>
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
+<div class="flex-container">
 
-    <h1>Hello, World!</h1>
+  <header class="flex-container__item">
+    <img src="assets/images/logo.png" alt="" class="logo">
 
-    <p>something else also</p>
+    <ul class="tabs site-nav">
+      <li class="tabs__item  site-nav__item">
+        <a href="#" class="tabs__link site-nav__link">The workshop</a>
+      </li>
+      <li class="tabs__item  site-nav__item">
+        <a href="#" class="tabs__link site-nav__link">2013 Schedule</a>
+      </li>
+      <li class="tabs__item  site-nav__item">
+        <a href="#" class="tabs__link site-nav__link">About CSSWizardry</a>
+      </li>
+      <li class="tabs__item  site-nav__item">
+        <a href="#" class="tabs__link site-nav__link">Contact</a>
+      </li>
+    </ul>
+  </header>
+
+  <div class="band flex-container">
+    <div class="flex-container__item flex--full-br no-padding">
+      <div class="box box--soft">
+        <h4 class="box--soft__header">Next up</h4>
+        <h5class="box--soft__text">Amsterdam 9th Oct</h5>
+        <a href="" class="btn--primary">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-grid">
+    <div class="flex--col__8">
+      <p class="lede">They say every journey begins with a single step; the same is true with building big websites.</p>
+      <p>In this workshop we shall look at some simple and small steps we can take to lay the foundations on which to build maintainable, scalable and big front-ends.</p>
+      <a href="#" class="link--ext">More on the workshop</a>
+    </div>
+    <div class="flex--col__4">
+      right
+    </div>
+
+  </div>
+</div>
+
 
 </body>
 </html>

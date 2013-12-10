@@ -139,3 +139,56 @@
     }
 
 }
+
+
+/**
+ * Flexbox layout container and children  .
+ */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+%flex-container__item,
+.flex-container__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+}
+
+
+%flex--full,
+.flex--full {
+    flex: 1 0 auto;
+}
+
+.flex--full-br {
+    @extend %flex--full;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.flex--col__8 {
+    order: 0;
+    flex: 3 0 auto;
+    align-self: auto;
+}
+
+.flex--col__4 {
+    order: 0;
+    flex: 1 0 auto;
+    align-self: auto;
+}
